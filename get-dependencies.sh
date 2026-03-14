@@ -29,4 +29,5 @@ if [ "$ARCH" = "x86_64" ]; then
 else
 	pacman -S --noconfirm telegram-desktop
 	VERSION=$(pacman -Q telegram-desktop | awk '{print $2; exit}')
+	mv -v /usr/bin/Telegram ./AppDir/bin
 fi
