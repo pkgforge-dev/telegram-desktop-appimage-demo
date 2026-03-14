@@ -11,6 +11,7 @@ export ICON=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/head
 export DESKTOP=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/heads/dev/lib/xdg/org.telegram.desktop.desktop
 export DEPLOY_OPENGL=1
 export DEPLOY_PIPEWIRE=1
+export DEBLOAT_LOCALE=0
 
 # Deploy dependencies
 quick-sharun \
