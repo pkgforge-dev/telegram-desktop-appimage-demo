@@ -10,6 +10,7 @@ pacman -Syu --noconfirm \
 	geoclue          \
 	gst-libav        \
 	gst-plugins-bad  \
+	gst-plugins-good \
 	gst-plugin-va    \
 	pipewire-audio   \
 	pipewire-jack    \
