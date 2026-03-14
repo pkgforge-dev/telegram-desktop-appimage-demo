@@ -16,7 +16,6 @@ echo "Getting telegram binary..."
 echo "---------------------------------------------------------------"
 mkdir -p ./AppDir/bin
 if [ "$ARCH" = "x86_64" ]; then
-
 	TARBALL_LINK=$(wget --retry-connrefused --tries=30 \
 		https://api.github.com/repos/telegramdesktop/tdesktop/releases/latest -O - \
 		| sed 's/[()",{} ]/\n/g' | grep -o -m 1 'https.*releases.*tsetup.*tar.xz'
