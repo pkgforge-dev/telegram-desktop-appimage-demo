@@ -10,6 +10,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/heads/dev/Telegram/Resources/art/icon256.png
 export DESKTOP=https://raw.githubusercontent.com/telegramdesktop/tdesktop/refs/heads/dev/lib/xdg/org.telegram.desktop.desktop
 export DEPLOY_OPENGL=1
+export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun ./AppDir/bin/Telegram /usr/lib/libwayland-*.so* /usr/lib/libwebkit2gtk-4.1.so*
