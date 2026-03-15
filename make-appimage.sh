@@ -3,7 +3,8 @@
 set -eu
 
 ARCH=$(uname -m)
-export ARCH
+VERSION=$(pacman -Q telegram-desktop | awk '{print $2; exit}')
+export ARCH VERSION
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
@@ -14,7 +15,7 @@ export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun \
-	./AppDir/bin/Telegram     \
+	/usr/bin/Telegram         \
 	/usr/lib/libwayland-*.so* \
 	/usr/lib/libgeoclue*.so*  \
 	/usr/lib/libwebkit2gtk-4.1.so*
