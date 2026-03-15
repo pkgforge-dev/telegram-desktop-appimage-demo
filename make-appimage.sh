@@ -15,7 +15,7 @@ export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 quick-sharun \
-	/usr/bin/Telegram     \
+	/usr/bin/Telegram         \
 	/usr/lib/libwayland-*.so* \
 	/usr/lib/libgeoclue*.so*  \
 	/usr/lib/libwebkit2gtk-4.1.so*
