@@ -6,11 +6,20 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm webkit2gtk-4.1 pipewire-audio pipewire-jack
+pacman -Syu --noconfirm \
+	geoclue          \
+	gst-libav        \
+	gst-plugins-base \
+	gst-plugins-bad  \
+	gst-plugins-good \
+	gst-plugin-va    \
+	pipewire-audio   \
+	pipewire-jack    \
+	webkit2gtk-4.1
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano
+get-debloated-pkgs --add-common --prefer-nano ffmpeg-mini
 
 echo "Getting telegram binary..."
 echo "---------------------------------------------------------------"
